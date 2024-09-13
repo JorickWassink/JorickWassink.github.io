@@ -5,13 +5,12 @@ body{
 html,*{
   font-family: 'Fira Code';
 }
+
 @font-face {
   font-family: 'Fira Code';
-  src: url('woff2/FiraCode-Light.woff2') format('woff2'),
-    url("woff/FiraCode-Light.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
+  src: url(/Fira_Code_v6.2/ttf/FiraCode-Regular.ttf);
 }
+
   .sidebar {
     height: 100%;
     width: 0;
