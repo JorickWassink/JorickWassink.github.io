@@ -2,8 +2,8 @@
 body{
     background-color:rgb(49, 54, 53);
 }
-html{
-  font-family: Fira Code;
+html,*{
+  font-family: 'Fira Code';
 }
   .sidebar {
     height: 100%;
@@ -16,7 +16,6 @@ html{
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
-    font-family: Fira Code;
 
   }
   
@@ -27,13 +26,11 @@ html{
     color: #818181;
     display: block;
     transition: 0.3s;
-    font-family: Fira Code;
 
   }
   
   .sidebar a:hover {
     color: #f1f1f1;
-    font-family: Fira Code;
 
   }
   
@@ -43,7 +40,6 @@ html{
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
-    font-family: Fira Code;
 
   }
   
@@ -54,20 +50,17 @@ html{
     color: white;
     padding: 10px 15px;
     border: none;
-    font-family: Fira Code;
 
   }
   
   .openbtn:hover {
     background-color: #444;
-    font-family: Fira Code;
 
   }
   
   #main {
     transition: margin-left .5s;
     padding: 16px;
-    font-family: Fira Code;
 
   }
   
