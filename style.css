@@ -3,6 +3,9 @@ body{
     background-color:rgb(49, 54, 53);
     font-family: Fira Code;
 }
+.pages {
+  font-family: Fira Code;
+}
   .sidebar {
     height: 100%;
     width: 0;
