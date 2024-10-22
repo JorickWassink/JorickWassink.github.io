@@ -3,7 +3,26 @@ body{
     background-color:rgb(49, 54, 53);
 }
 html,*{
-  font-family: 'Fira Code';
+  font-family: "Fira Code", sans-serif;
+}
+.logo{
+  width: 50%;
+  height: 50%;
+}
+.InfoColumn{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background-color:rgb(31, 34, 33);
+  color: whitesmoke;
+  width: 500px;
+  position: relative;
+}
+.columns{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
 }
 
 a{

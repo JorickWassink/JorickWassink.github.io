@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JorickWassink Portofolio</title>
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Fira+Code?query=fira+code">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+
+
+
+<div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="index.html" class="pages">Home</a>
+    <a href="Limbound.html" class="pages">Limbound</a>
+    <a href="Pinball.html" class="pages">Pinball</a>
+    <a href="Monkey Survivors.html">Monkey Survivors</a>
+  </div>
+  
+<div class="headers">
+  <h1>Monkey Survivors</h1>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <div id="main">
+    <button class="openbtn" onclick="openNav()">☰ Navigation</button>  
+  </div>
+  
+
+  <script>
+  function openNav() {
+    document.getElementById("mySidebar").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+  }
+  </script>
+
+
+
+
+<div class="columns">
+
+  <div class="game link">
+    
+  </div>
+  <div class="game video">
+
+  </div>
+
+  <div class="InfoColumn">
+    <div class="Description">
+      <img class="logo" src="images/logo2.png" alt="logo">
+      <h3>Description</h3>
+      <p>
+        Monkey Survivors is a group project based a lot off of the game vampire survivors.
+        It is a mobile game where you fight through hordes of enemies trying your best to survive for as long as possible.
+      </p>
+      <p>
+        To set it apart from other games like it we added a crafting system where enemies drop materials that can be used to craft other weapons.
+        It also features simple map generation by randomly generation the background of the game and some obstacles.
+      </p>
+    </div>
+    <div>
+      <h3>Crafting menu</h3>
+      <p>The image below is of the crafting menu in the game where you can scroll through possible weapons that show their name, description, amount of upgrades and the cost to craft.</p>
+      <img src="images/crafting menu.png" alt="crafting menu">
+    </div>
+    <div>
+      <h3>Map generation</h3>
+      <p>The image below is an example of the map randomly creating the background for the game</p>
+      <img src="images/map gen.png" alt="map gen">
+    </div>
+  </div>
+</div>
+
+     
+</body>
+</html>
