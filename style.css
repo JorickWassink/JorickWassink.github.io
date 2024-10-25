@@ -9,7 +9,22 @@ html,*{
   width: 50%;
   height: 50%;
 }
+.column1{
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background-color:rgb(31, 34, 33);
+  color: whitesmoke;
+  width: 500px;
+  position: relative;
+  height: fit-content;
+  padding-bottom: 20px;
+}
 .InfoColumn{
+  border-radius: 10px;
+  padding-top: 20px;
   display: flex;
   align-items: center;
   flex-direction: column;
