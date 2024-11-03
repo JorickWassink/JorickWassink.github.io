@@ -126,6 +126,14 @@ i{
 
   }
   
+    video::-webkit-media-controls-volume-slider {
+    display:none;
+    }
+    
+    video::-webkit-media-controls-mute-button {
+    display:none;
+    }
+
   .openbtn:hover {
     background-color: #444;
 
@@ -140,5 +148,9 @@ i{
     transition: margin-left .5s;
     padding: 16px;
 
+  }
+  #information {
+    transition: margin-left .5s;
+    padding: 16px;
   }
   

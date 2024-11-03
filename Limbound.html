@@ -11,30 +11,104 @@
 </head>
 <body>
 
+
+
+
+  <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="index.html" class="pages">Home</a>
+      <a href="Limbound.html" class="pages">Limbound</a>
+      <a href="Monkey Survivors.html">Monkey Survivors</a>
+    </div>
     
-<div id="mySidebar" class="sidebar">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-    <a href="index.html">Home</a>
-    <a href="Limbound.html">Limbound</a>
-    <a href="Pinball.html">Pinball</a>
-    <a href="Monkey Survivors.html">Monkey Survivors</a>
+  <div class="headers">
+    <h1>Limbound</h1>
   </div>
   
-  <div id="main">
-    <button class="openbtn" onclick="openNav()">☰ Navigation</button>  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    <div id="main">
+      <button class="openbtn" onclick="openNav()">☰ Navigation</button>  
+    </div>
+    
+  
+    <script>
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+      document.getElementById("information").style.marginLeft = "50px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+      document.getElementById("information").style.marginLeft = "0";
+    }
+    </script>
+  
+  
+  
+  
+  <div class="columns" id="information">
+    <div class="InfoColumn">
+      <div class="Description">
+        <h3>Description</h3>
+        <p>
+            Limbound is a very simple 2d platformer made in unity where the player needs to use light to see where they have to go.
+            Limbound was made as a school assignment where the goal was to create a simple 2d platformer with a unique point to it.
+        </p>
+        <p>
+          I chose to use the lighing feature because i wanted to try using the URP lighting engine instead of the base one that unity has.
+          The lighting feature also makes for a fun and frustrating game where you need to keep finding out where to go.
+        </p>
+      </div>
+      <div>
+        &nbsp;
+        <h2>Under here are some systems in the game</h2>
+      </div>
+      <div>
+        <h3>Lighting</h3>
+        <p>In limbound you need to find where to go using light that you can move with your mouse</p>
+        <video width="400" controls muted>
+          <source src="videos/Limbound/Light feature.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div>
+        <h3>Spiked balls</h3>
+        <p>In limbound there are spiked balls that when touched put the player back to the last piece of ground they touched.</p>
+        <video width="400" controls muted>
+          <source src="videos/Limbound/spiked balls.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div>
+        <h3>Slopes</h3>
+        <p>In limbound there are slopes that stop the players movement and slowly slide them down.</p>
+        <video width="400" controls muted>
+          <source src="videos/Limbound/SLopes.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  
+    <div class="column1">
+      <div class="game video">
+        <h3>Here is a small showcase of Limbound</h3>
+          <video width="400" controls muted>
+            <source src="videos/Limbound/limboundgameplay.mp4" type="video/mp4">
+          </video>
+      </div>
+
+    </div>
   </div>
   
-  <script>
-  function openNav() {
-    document.getElementById("mySidebar").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-  }
-  
-  function closeNav() {
-    document.getElementById("mySidebar").style.width = "0";
-    document.getElementById("main").style.marginLeft= "0";
-  }
-  </script>
-     
-</body>
+       
+  </body>
 </html>

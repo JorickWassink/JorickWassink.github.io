@@ -17,7 +17,6 @@
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
     <a href="index.html" class="pages">Home</a>
     <a href="Limbound.html" class="pages">Limbound</a>
-    <a href="Pinball.html" class="pages">Pinball</a>
     <a href="Monkey Survivors.html">Monkey Survivors</a>
   </div>
   
@@ -45,18 +44,20 @@
   function openNav() {
     document.getElementById("mySidebar").style.width = "250px";
     document.getElementById("main").style.marginLeft = "250px";
+    document.getElementById("information").style.marginLeft = "50px";
   }
   
   function closeNav() {
     document.getElementById("mySidebar").style.width = "0";
     document.getElementById("main").style.marginLeft= "0";
+    document.getElementById("information").style.marginLeft = "0";
   }
   </script>
 
 
 
 
-<div class="columns">
+<div class="columns" id="information">
   <div class="InfoColumn">
     <div class="Description">
       <img class="logo" src="images/logo2.png" alt="logo">
@@ -87,11 +88,8 @@
   </div>
 
   <div class="column1">
-    <div class="game link">
-    
-    </div>
     <div class="game video">
-      <h3>Here the promotion video for our game.</h3>
+      <h3>Here isthe promotion video for our game.</h3>
         <video width="400" controls>
           <source src="videos/Monkey Survivors Trailer.mp4" type="video/mp4">
         </video>
