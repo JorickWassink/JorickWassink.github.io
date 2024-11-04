@@ -2,9 +2,13 @@
 body{
     background-color:rgb(49, 54, 53);
 }
+
 html,*{
   font-family: "Fira Code", sans-serif;
 }
+
+
+
 .logo{
   width: 50%;
   height: 50%;
@@ -21,6 +25,10 @@ html,*{
   position: relative;
   height: fit-content;
   padding-bottom: 20px;
+  transition: 0.5s;
+}
+.column1:hover{
+  filter: drop-shadow(8px 8px 8px gray);
 }
 /* test*/
 .InfoColumn{
@@ -34,11 +42,19 @@ html,*{
   color: whitesmoke;
   width: 500px;
   position: relative;
+  transition: 0.5s;
+}
+.InfoColumn:hover{
+  filter: drop-shadow(8px 8px 8px gray);
 }
 .columns{
   display: flex;
   justify-content: space-around;
   flex-direction: row;
+}
+
+#about{
+  font-size:x-large;
 }
 
 a{
@@ -49,11 +65,18 @@ a{
   display: flex;
   align-items: center;
 }
+
 .headers{
   display: flex;
   align-items: center;
   flex-direction: column;
-  color: gray;
+  background-color:rgb(22, 24, 23);
+  color: white;
+  font-size: xx-large;
+  text-align: center;
+}
+.subheaders{
+  font-size: large;
 }
 .ContactBlokje{
   display: flex;
@@ -62,11 +85,30 @@ a{
   justify-content: space-around;
   height:fit-content;
   width:fit-content;
-  position: relative;
-  left: 80%;
-  border-style: solid;
-  border-radius: 5%;
-  background-color:rgb(55, 60, 59);
+  background-color:rgb(31, 34, 33);
+  color: white;
+  border-radius: 10px;
+  
+}
+.ContactBlokje:hover{
+  filter: drop-shadow(8px 8px 8px gray);
+}
+
+.introduction{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height:fit-content;
+  width: 550px;
+  text-align: center;
+  background-color:rgb(31, 34, 33);
+  color: white;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.introduction:hover{
+  filter: drop-shadow(8px 8px 8px gray);
 }
 
 i{
@@ -85,11 +127,14 @@ i{
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color:rgb(31, 34, 33);
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
 
+  }
+  .sidebar:hover{
+    filter: drop-shadow(8px 8px 8px gray);
   }
   
   .sidebar a {
@@ -99,7 +144,6 @@ i{
     color: #818181;
     display: block;
     transition: 0.3s;
-
   }
   
   .sidebar a:hover {
@@ -113,19 +157,19 @@ i{
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
-
   }
   
   .openbtn {
     font-size: 20px;
     cursor: pointer;
-    background-color: #111;
+    background-color:rgb(31, 34, 33);
     color: white;
     padding: 10px 15px;
     border: none;
-
-  }
   
+    transition: 0.5s;
+  }
+
     video::-webkit-media-controls-volume-slider {
     display:none;
     }
@@ -136,7 +180,7 @@ i{
 
   .openbtn:hover {
     background-color: #444;
-
+    filter: drop-shadow(8px 8px 8px gray);
   }
   
   #main {
@@ -147,10 +191,11 @@ i{
   #contact {
     transition: margin-left .5s;
     padding: 16px;
-
+    transition: 0.5s;
   }
   #information {
     transition: margin-left .5s;
     padding: 16px;
   }
+  
   
