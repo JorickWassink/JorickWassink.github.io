@@ -3,104 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JorickWassink Portofolio</title>
-    
-    <link rel="stylesheet" href="https://fonts.google.com/specimen/Fira+Code?query=fira+code">
-
-    <script src="https://kit.fontawesome.com/7322a02fc3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Lines.css">
+    <link rel="stylesheet" href="cards.css">
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap" 
+        rel="stylesheet"
+    />
+    <title>Document</title>
 </head>
+
+<header>
+    <p>Jorick Wassink</p>
+    <p>Looking for internships</p>
+</header>
+
 <body>
-
-
-
-
-  
-<div class="headers">
-  <h1>Jorick Wassink</h1>
-  <div class="subheaders">
-    <h2>Software Developer Student</h2>
-    <h3>Looking for new opportunities</h3>
-  </div>
-  
-</div>
-  
-
-<div id="mySidebar" class="sidebar">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-    <a href="index.html">Home</a>
-    <a href="Limbound.html">Limbound</a>
-    <a href="Monkey Survivors.html">Monkey Survivors</a>
-  </div>
-  
-  <div id="main">
-    <button class="openbtn" onclick="openNav()">☰ Navigation</button>  
-  </div>
-  
-  <script>
-function openNav() {
-    document.getElementById("mySidebar").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-    document.getElementById("information").style.marginLeft = "50px";
-  }
-  
-  function closeNav() {
-    document.getElementById("mySidebar").style.width = "0";
-    document.getElementById("main").style.marginLeft= "0";
-    document.getElementById("information").style.marginLeft = "0";
-  }
-  </script>
-
-
-<div class="columns" id="information">
-
-
-
-  <div class="introduction" id="about">
-    <h1>About me</h1>
-    
-    <p>
-      I am a second year student at ROC van twente in Enschede.
-      At that school i learn all about creating and developing games in unity using C#.
-    </p>
-    <p>I also learn the basics of other programming languages such as: Javascript, html and css. However my knowledge of those languages is limited to the basics.
-      During my time at this school they also encourage us to learn other languages on our own and will help with that if they can.
-    </p>
-    <p>I have been interested in programming since a young age and am working hard to try to make the best applications that i can.</p>
-
-    
-    
-  </div>
-
-
-
-  
-
-  <div id="contact" class="ContactBlokje">
-    <div class="githubinfo">
-      <i class="fa-brands fa-github"></i>
-      &nbsp;
-      <a href="https://github.com/JorickWassink" target="_blank">Github</a>
+    <div class="lines">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
     </div>
-    <div class="email">
-      <i class="fa-solid fa-envelope"></i>
-      &nbsp;
-      <a href="mailto:wassinkjorick@gmail.com" target="_blank">wassinkjorick@gmail.com</a> 
+
+
+<div class="cards">
+
+  <a href="https://meow.camera/#5182127533664706079" target="_blank">
+    <div class="card">
+      <video class="card-video" muted loop>
+        <source src="Videos/limboundgameplay.mp4" type="video/mp4">
+      </video>
+
+      <p class="heading">Limbound</p>
+      <p>2D platformer that uses lighting in unique ways to find a path!.</p>
     </div>
-    <div class="mobilecontact">
-      <i class="fa-solid fa-phone"></i>
-      &nbsp;
-      <a href="callto:0616674513" target="_blank">06-16674513</a>
+  </a>
+
+  <a href="https://github.com/abdurrahmanesatyavuz/BananaBunch/releases/tag/FinalRelease" target="_blank">
+    <div class="card">
+      <video class="card-video" muted loop>
+        <source src="Videos/Monkey Survivors Trailer.mp4" type="video/mp4">
+      </video>
+
+      <p class="heading">Monkey Survivors</p>
+      <p>Small mobile game inspired by "Vampire Survivors" but with monkeys!.</p>
     </div>
-    <div class="linkedincontact">
-      <i class="fa-brands fa-linkedin"></i>
-      &nbsp;
-      <a href="https://www.linkedin.com/in/jorick-wassink-b86b2b270/" target="_blank">linkedIn</a>
+  </a>
+
+  <a href="https://github.com/Thriftyjeroen/Crash-N-Dash/releases/tag/Final_Release" target="_blank">
+    <div class="card">
+      <video class="card-video" muted loop>
+        <source src="Videos/video.mp4" type="video/mp4">
+      </video>
+
+      <p class="heading">Crash N Dash</p>
+      <p>2D top-down racing game with added obstacles and power-ups!.</p>
     </div>
-  </div>
+  </a>
+
+  <a href="https://github.com/JorickWassink/ClaimTheRelics/releases/tag/Release_03" target="_blank">
+    <div class="card">
+      <video class="card-video" muted loop>
+        <source src="Videos/video.mp4" type="video/mp4">
+      </video>
+
+      <p class="heading">Blueprint Bound</p>
+      <p>Mobile "Inscryption" inspired card game with physical cards!.</p>
+    </div>
+  </a>
+
 </div>
 
 
-     
+
 </body>
+
+<script>
+document.querySelectorAll(".card").forEach(card => {
+    const video = card.querySelector("video");
+
+    card.addEventListener("mouseenter", () => {
+        video.play();
+    });
+
+    card.addEventListener("mouseleave", () => {
+        video.pause();
+        video.currentTime = 0;
+    });
+});
+</script>
+
 </html>
+
+
+

@@ -1,201 +1,29 @@
-
-body{
-    background-color:rgb(49, 54, 53);
-}
-
-html,*{
-  font-family: "Fira Code", sans-serif;
-}
-
-
-
-.logo{
-  width: 50%;
-  height: 50%;
-}
-.column1{
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  background-color:rgb(31, 34, 33);
-  color: whitesmoke;
-  width: 500px;
-  position: relative;
-  height: fit-content;
-  padding-bottom: 20px;
-  transition: 0.5s;
-}
-.column1:hover{
-  filter: drop-shadow(8px 8px 8px gray);
-}
-/* test*/
-.InfoColumn{
-  border-radius: 10px;
-  padding-top: 20px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  background-color:rgb(31, 34, 33);
-  color: whitesmoke;
-  width: 500px;
-  position: relative;
-  transition: 0.5s;
-}
-.InfoColumn:hover{
-  filter: drop-shadow(8px 8px 8px gray);
-}
-.columns{
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-}
-
-#about{
-  font-size:x-large;
-}
-
-a{
-  color: gray;
-  font-size: large;
-}
-.email,.githubinfo,.mobilecontact,.linkedincontact{
-  display: flex;
-  align-items: center;
-}
-
-.headers{
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  background-color:rgb(22, 24, 23);
-  color: white;
-  font-size: xx-large;
-  text-align: center;
-}
-.subheaders{
-  font-size: large;
-}
-.ContactBlokje{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  height:fit-content;
-  width:fit-content;
-  background-color:rgb(31, 34, 33);
-  color: white;
-  border-radius: 10px;
-  
-}
-.ContactBlokje:hover{
-  filter: drop-shadow(8px 8px 8px gray);
-}
-
-.introduction{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  height:fit-content;
-  width: 550px;
-  text-align: center;
-  background-color:rgb(31, 34, 33);
-  color: white;
-  border-radius: 10px;
-  transition: 0.5s;
-}
-.introduction:hover{
-  filter: drop-shadow(8px 8px 8px gray);
-}
-
-i{
-  font-size:xx-large;
-}
-
-@font-face {
-  font-family: 'Fira Code';
-  src: url(/Fira_Code_v6.2/ttf/FiraCode-Regular.ttf);
-}
-
-  .sidebar {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color:rgb(31, 34, 33);
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-
-  }
-  .sidebar:hover{
-    filter: drop-shadow(8px 8px 8px gray);
-  }
-  
-  .sidebar a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  .sidebar a:hover {
-    color: #f1f1f1;
-
-  }
-  
-  .sidebar .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-  
-  .openbtn {
-    font-size: 20px;
-    cursor: pointer;
-    background-color:rgb(31, 34, 33);
-    color: white;
-    padding: 10px 15px;
-    border: none;
-  
-    transition: 0.5s;
-  }
-
-    video::-webkit-media-controls-volume-slider {
-    display:none;
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
     }
     
-    video::-webkit-media-controls-mute-button {
-    display:none;
+    body {
+        font-family: 'Fira Code', monospace;
+        line-height: 1.6;
+        color: #111;
+    }
+    
+    header {
+        font-family: 'Fira Code', monospace;
+        background: linear-gradient(to bottom, #000000, #9870d3); /* gradient from purple to pink */
+        color: #fff;
+        padding: 1rem 0;
+        text-align: center;
+        font-size: 2.5rem;
+        border-bottom: 2px solid #9870d3;
+        /* glow effect */
+        box-shadow: 0 0 10px #fff,
+                0 0 20px #9870d3,
+                0 0 30px #ad90d8;
     }
 
-  .openbtn:hover {
-    background-color: #444;
-    filter: drop-shadow(8px 8px 8px gray);
-  }
-  
-  #main {
-    transition: margin-left .5s;
-    padding: 16px;
-
-  }
-  #contact {
-    transition: margin-left .5s;
-    padding: 16px;
-    transition: 0.5s;
-  }
-  #information {
-    transition: margin-left .5s;
-    padding: 16px;
-  }
-  
-  
+    .cards{
+        font-family: 'Fira Code', monospace;
+    }
